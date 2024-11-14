@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- ===SCRIPT -->
+    <script defer src="script.js"></script>
+
+    <!-- ==== TITLE -->
+    <title>Taske||Trackers</title>
+  </head>
+  <body>
+    <p class="header">&LessLess;/ Track Your Task Here&GreaterGreater;</p>
+    <div class="task__box">
+      <input
+        type="text"
+        placeholder="Start writing and press enter to create task"
+        class="text--input"
+        id="inp"
+      />
+      <p class="enter">↩</p>
+      <!-- ↩ -->
+      <div class="task--lists">
+        <div class="task task${index + 1}">
+          <input type="checkbox" class="box" id="check${value}" />
+          <p class="task-data">${value}</p>
+          <p class="delete">X</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="task--not--done">
+        Taskes
+        <p>0</p>
+      </div>
+      <div class="task--done">
+        Done Taskes
+        <p>0</p>
+      </div>
+      <p class="copy--right">&copy<span>Imadudin K</span></p>
+    </div>
+  </body>
+</html>

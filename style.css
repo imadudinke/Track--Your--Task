@@ -1,0 +1,124 @@
+/* REST */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  height: 100vh;
+  font-family: "Inconsolata", monospace;
+  background-color: rgb(74, 74, 74);
+  color: azure;
+}
+body ::-webkit-scrollbar {
+  background-color: transparent;
+  width: 10px;
+  box-shadow: 1px 1px 15px #3f3f3fef;
+}
+body ::-webkit-scrollbar-thumb {
+  background-color: #5d5b5b;
+  height: 1px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.header {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem;
+}
+.task__box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid gray;
+  padding: 1rem;
+  gap: 1rem;
+  border-radius: 10px;
+}
+.task__box input {
+  padding: 1rem 0.5rem;
+  font-size: 1.2rem;
+  border-radius: 15px;
+  border: none;
+}
+.enter {
+  position: absolute;
+  font-size: 2.8rem;
+  color: #ffffff;
+  background-color: #000;
+  font-weight: 700;
+  padding: 0 0.5rem;
+  top: 3.75%;
+  right: 1.25%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.enter:active {
+  transform: scale(0.95);
+}
+.task--lists {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  height: 18.2rem;
+  overflow-y: scroll;
+  padding: 0 1rem;
+}
+.task {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #fff;
+}
+.task-data {
+  text-align: center;
+  text-wrap: wrap;
+}
+.task-data--completed {
+  text-decoration: line-through;
+  color: #b1aeae;
+}
+.box {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.box:active {
+  color: red;
+}
+.delete {
+  font-size: 1.1rem;
+  color: #ff0000;
+  cursor: pointer;
+}
+.copy--right {
+  font-size: 1.2rem;
+  text-align: center;
+}
+.copy--right span {
+  font-weight: 800;
+  background-image: linear-gradient(
+    to right,
+    #2438eb,
+    rgb(247, 129, 151),
+    rgb(247, 129, 151)
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+}
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+@media screen and (max-width: 700px) {
+  .enter {
+    right: 2.5%;
+  }
+}
